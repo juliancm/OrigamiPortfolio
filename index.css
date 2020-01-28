@@ -25,3 +25,26 @@ header {
 h1 {
   font-size: 30px;
 }
+
+.box {
+  margin: auto;
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 10px 10px 5px darkolivegreen;
+  animation-name: folding-box;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes folding-box {
+  from {
+    background-color: darkgoldenrod;
+    transform: perspective(400px) rotateY(45deg) rotateZ(45deg);
+  }
+  to {
+    background-color: goldenrod;
+    transform: perspective(600px) rotateY(15deg) rotateZ(15deg);
+  }
+}
