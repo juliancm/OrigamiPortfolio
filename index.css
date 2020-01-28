@@ -3,7 +3,7 @@
 }
 
 html {
-    background-image: linear-gradient(darkolivegreen, darkgoldenrod);
+    background-image: linear-gradient(darkslategrey, dimgrey);
     width: 100%;
     height: 100%;
 }
@@ -31,7 +31,6 @@ h1 {
   margin-top: 50px;
   width: 100px;
   height: 100px;
-  box-shadow: 10px 10px 5px darkolivegreen;
   animation-name: folding-box;
   animation-duration: 3s;
   animation-direction: alternate;
@@ -41,10 +40,10 @@ h1 {
 @keyframes folding-box {
   from {
     background-color: darkgoldenrod;
-    transform: perspective(400px) rotateY(45deg) rotateZ(45deg);
+    transform: perspective(400px) rotateY(45deg) rotateZ(45deg) scale(0.8,0.8);
   }
   to {
     background-color: goldenrod;
-    transform: perspective(600px) rotateY(15deg) rotateZ(15deg);
+    transform: perspective(600px) rotateY(15deg) rotateZ(15deg) scale(1,1);
   }
 }
